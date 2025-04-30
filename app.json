@@ -1,26 +1,26 @@
 {
   "expo": {
-    "name": "my-expo-app",
+    "name": "Salonmate",
     "slug": "my-expo-app",
-    "version": "1.0.0",
-
+    "version": "1.0.2",
     "web": {
       "favicon": "./assets/favicon.png"
     },
-
     "experiments": {
       "tsconfigPaths": true
     },
-
-    "plugins": [],
-
+    "fonts": [
+      {
+        "asset": "./assets/fonts/SpaceGrotesk-Regular.ttf",
+        "family": "SpaceGrotesk"
+      }
+    ],
+    "plugins": ["react-native-ble-plx"],
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-
     "userInterfaceStyle": "light",
-
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/logo.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -30,8 +30,19 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#ffffff"
+      },
+      "package": "com.naveen08.salonmate",
+      "permissions": [
+        "android.permission.BLUETOOTH",
+        "android.permission.BLUETOOTH_ADMIN",
+        "android.permission.BLUETOOTH_CONNECT"
+      ]
+    },
+    "extra": {
+      "eas": {
+        "projectId": "9320b7e7-1cd9-4885-8911-d018dd99df3c"
       }
     }
   }

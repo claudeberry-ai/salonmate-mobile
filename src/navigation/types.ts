@@ -1,0 +1,28 @@
+export type RootStackParamList = {
+  Login: undefined;
+  Signup: undefined;
+  Welcome: undefined;
+  CreateSalon: undefined;
+  Home: undefined;
+  Services: undefined;
+  AddService: undefined;
+  Reports: undefined;
+  DailyReports: undefined;
+  MonthlyReports: undefined;
+  CurrentSale: undefined;
+  NewSale: undefined;
+  InvoiceDetail: { invoiceId: number };
+  Cart: { selectedServices: {} };
+  Settings: undefined;
+  EditProfile: undefined;
+  ChangePassword: undefined;
+  SalonManagement: undefined;
+  StaffManagement: undefined;
+  AppointmentSchedule: undefined;
+  Printer: undefined;
+  StaffModify: { staff: object };
+  StaffPerformance: { userId: number };
+  CreateStaffProfile: undefined;
+  AddExpense: undefined;
+  ExpenseGallery: undefined;
+};
